@@ -1,3 +1,13 @@
+import baoImg from '../assets/Gallary/bao.jpeg';
+import chickenChilliImg from '../assets/Gallary/Bsail-chicken-chilli.jpeg';
+import dimSumsImg from '../assets/Gallary/dim-sums.jpeg';
+import dimSums2Img from '../assets/Gallary/dimsums-2.jpeg';
+import greenAppleJuiceImg from '../assets/Gallary/Green-apple-juice.jpeg';
+import jagerBombImg from '../assets/Gallary/jager-bomb.jpeg';
+import pizzaImg from '../assets/Gallary/pizza.jpeg';
+import tempuraSushiImg from '../assets/Gallary/tempura-sushi.jpeg';
+import tequilaSunsetImg from '../assets/Gallary/tequila-sunset.jpeg';
+
 export const ninePMData = {
   brandId: 'ninepm',
   brandName: '9PM',
@@ -212,45 +222,66 @@ export const ninePMData = {
   gallery: [
     {
       id: 1,
-      category: 'DJs',
-      title: 'Underground Electronic Night',
-      image: 'https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=1200&q=80',
-      caption: 'International DJ performing live to an ecstatic crowd.'
+      category: 'Food',
+      title: 'Steamed Bao Buns',
+      image: baoImg,
+      caption: 'Fluffy steamed bao buns with savory fillings.'
     },
     {
       id: 2,
-      category: 'Cocktails',
-      title: 'Artisan Smoked Negroni',
-      image: 'https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80',
-      caption: 'Handcrafted signature cocktails at the 9PM central bar.'
+      category: 'Food',
+      title: 'Chicken Chilli',
+      image: chickenChilliImg,
+      caption: 'Spicy Bsail-style chicken chilli.'
     },
     {
       id: 3,
-      category: 'Nightlife',
-      title: 'Electric Dance Floor',
-      image: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80',
-      caption: 'Pure energy, ambient lighting, and pulsating soundscapes.'
+      category: 'Food',
+      title: 'Dim Sums',
+      image: dimSumsImg,
+      caption: 'Handcrafted dim sums with dipping sauces.'
     },
     {
       id: 4,
       category: 'Food',
-      title: 'Gourmet Sushi & Kebabs',
-      image: 'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=800&q=80',
-      caption: 'Freshly rolled artisan sushi and sizzling skewers.'
+      title: 'Dim Sums Platter',
+      image: dimSums2Img,
+      caption: 'A second take on our signature dim sums.'
     },
     {
       id: 5,
-      category: 'Crowd',
-      title: 'Palolem Party Tribe',
-      image: 'https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80',
-      caption: 'Travelers and music lovers uniting under one roof.'
+      category: 'Cocktails',
+      title: 'Green Apple Juice',
+      image: greenAppleJuiceImg,
+      caption: 'Fresh-pressed green apple juice.'
     },
     {
       id: 6,
-      category: 'Atmosphere',
-      title: 'Neon Lounge & Bar Glow',
-      image: 'https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1200&q=80',
-      caption: 'Intimate seating layered with cinematic mood lighting.'
+      category: 'Cocktails',
+      title: 'Jager Bomb',
+      image: jagerBombImg,
+      caption: 'The classic Jager Bomb shot.'
+    },
+    {
+      id: 7,
+      category: 'Food',
+      title: 'Wood-Fired Pizza',
+      image: pizzaImg,
+      caption: 'Crispy wood-fired pizza with fresh toppings.'
+    },
+    {
+      id: 8,
+      category: 'Food',
+      title: 'Tempura Sushi',
+      image: tempuraSushiImg,
+      caption: 'Tempura-style sushi rolls.'
+    },
+    {
+      id: 9,
+      category: 'Cocktails',
+      title: 'Tequila Sunset',
+      image: tequilaSunsetImg,
+      caption: 'A refreshing tequila sunset cocktail.'
     }
   ]
 };
