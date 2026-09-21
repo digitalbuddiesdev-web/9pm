@@ -2,12 +2,25 @@ import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ReservationModal from './components/ReservationModal';
+import MusicPlayer, { TRACKS } from './components/MusicPlayer';
 import Home from './pages/Home';
 import { ninePMData } from './data/ninePM';
 import { Phone, Calendar } from 'lucide-react';
 
 export default function App() {
   const [isReservationOpen, setIsReservationOpen] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
+  const [isMusicMinimized, setIsMusicMinimized] = useState(false);
+
+  const handleTogglePlay = (val) => {
+    setIsPlaying(typeof val === 'boolean' ? val : !isPlaying);
+  };
+
+  const handleNextTrack = () => {
+    setCurrentTrackIndex((prev) => (prev + 1) % TRACKS.length);
+  };
 
   return (
     <div className="min-h-screen bg-[#0A0A0A] text-white">
@@ -15,6 +28,8 @@ export default function App() {
       <Navbar
         data={ninePMData}
         onOpenReservation={() => setIsReservationOpen(true)}
+        isPlaying={isPlaying}
+        onTogglePlay={() => handleTogglePlay()}
       />
 
       {/* Main Home Page */}
@@ -22,8 +37,23 @@ export default function App() {
         <Home
           data={ninePMData}
           onOpenReservation={() => setIsReservationOpen(true)}
+          isPlaying={isPlaying}
+          onTogglePlay={() => handleTogglePlay()}
+          currentTrack={TRACKS[currentTrackIndex]}
         />
       </main>
+
+      {/* Global Club Music Player */}
+      <MusicPlayer
+        isPlaying={isPlaying}
+        onTogglePlay={handleTogglePlay}
+        currentTrackIndex={currentTrackIndex}
+        onNextTrack={handleNextTrack}
+        isMuted={isMuted}
+        onToggleMute={() => setIsMuted(!isMuted)}
+        isMinimized={isMusicMinimized}
+        onToggleMinimize={setIsMusicMinimized}
+      />
 
       {/* Global Footer */}
       <Footer data={ninePMData} />

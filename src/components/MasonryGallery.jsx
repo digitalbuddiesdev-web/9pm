@@ -59,14 +59,16 @@ export default function MasonryGallery({ data }) {
 
         {/* Editorial Masonry Grid */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {filteredItems.map((item, idx) => (
-            <div
-              key={item.id || idx}
-              onClick={() => openModal(idx)}
-              className={`group relative rounded-2xl overflow-hidden cursor-pointer border border-white/10 bg-[#1A1A1A] hover:border-[#8F0000]/60 transition-all duration-500 hover:shadow-2xl ${
-                idx === 0 || idx === 5 ? 'sm:col-span-2 lg:col-span-2 aspect-[16/9]' : 'aspect-[4/3]'
-              }`}
-            >
+          {filteredItems.map((item, idx) => {
+            const isFeatured = idx % 10 === 0 || idx % 10 === 6;
+            return (
+              <div
+                key={item.id || idx}
+                onClick={() => openModal(idx)}
+                className={`group relative rounded-2xl overflow-hidden cursor-pointer border border-white/10 bg-[#1A1A1A] hover:border-[#8F0000]/60 transition-all duration-500 hover:shadow-2xl ${
+                  isFeatured ? 'sm:col-span-2 lg:col-span-2 aspect-[16/9]' : 'aspect-[4/3]'
+                }`}
+              >
               {/* Image */}
               <img
                 src={item.image}
@@ -105,7 +107,8 @@ export default function MasonryGallery({ data }) {
                 )}
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
       </div>
 

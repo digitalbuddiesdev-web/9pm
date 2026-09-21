@@ -22,7 +22,7 @@ import SocialSection from '../components/SocialSection';
 import LocationSection from '../components/LocationSection';
 import ninePMLogoImg from '../assets/9pmlogo.jpg';
 
-export default function Home({ data, onOpenReservation }) {
+export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay, currentTrack }) {
   const [activeMenuCategory, setActiveMenuCategory] = useState('All');
 
   const scrollToSection = (id) => {
@@ -89,15 +89,38 @@ export default function Home({ data, onOpenReservation }) {
             {data.heroSubtitle}
           </p>
 
-          {/* Equalizer Wave Accent */}
-          <div className="my-8 flex items-center justify-center gap-1.5 h-8">
-            <div className="w-1.5 bg-[#8F0000] rounded-full eq-bar-1" />
-            <div className="w-1.5 bg-[#B31212] rounded-full eq-bar-2" />
-            <div className="w-1.5 bg-[#8F0000] rounded-full eq-bar-3" />
-            <div className="w-1.5 bg-[#B31212] rounded-full eq-bar-4" />
-            <div className="w-1.5 bg-[#8F0000] rounded-full eq-bar-5" />
-            <div className="w-1.5 bg-[#B31212] rounded-full eq-bar-2" />
-            <div className="w-1.5 bg-[#8F0000] rounded-full eq-bar-1" />
+          {/* Interactive Equalizer Wave Accent & Club Sound Trigger */}
+          <div className="my-8 flex flex-col items-center gap-3">
+            <button
+              onClick={onTogglePlay}
+              className="group flex items-center gap-3.5 px-5 py-2.5 rounded-full bg-[#1A1A1A]/95 hover:bg-[#242424] border border-[#8F0000]/40 hover:border-[#8F0000] transition-all backdrop-blur-md shadow-xl hover:scale-105"
+              aria-label={isPlaying ? 'Pause 9PM Club Music' : 'Play 9PM Club Music'}
+            >
+              {/* Equalizer Bars */}
+              <div className="flex items-center justify-center gap-1 h-5">
+                <div className={`w-1 bg-[#8F0000] rounded-full transition-all ${isPlaying ? 'eq-bar-1 h-5' : 'h-2 opacity-50'}`} />
+                <div className={`w-1 bg-[#B31212] rounded-full transition-all ${isPlaying ? 'eq-bar-2 h-6' : 'h-3 opacity-50'}`} />
+                <div className={`w-1 bg-[#8F0000] rounded-full transition-all ${isPlaying ? 'eq-bar-3 h-4' : 'h-2 opacity-50'}`} />
+                <div className={`w-1 bg-[#B31212] rounded-full transition-all ${isPlaying ? 'eq-bar-4 h-6' : 'h-3.5 opacity-50'}`} />
+                <div className={`w-1 bg-[#8F0000] rounded-full transition-all ${isPlaying ? 'eq-bar-5 h-4' : 'h-2 opacity-50'}`} />
+                <div className={`w-1 bg-[#B31212] rounded-full transition-all ${isPlaying ? 'eq-bar-2 h-5' : 'h-3 opacity-50'}`} />
+                <div className={`w-1 bg-[#8F0000] rounded-full transition-all ${isPlaying ? 'eq-bar-1 h-3' : 'h-1.5 opacity-50'}`} />
+              </div>
+
+              <span className="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
+                {isPlaying ? (
+                  <>
+                    <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                    <span>9PM Sound Playing &bull; Tap to Pause</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="w-2 h-2 rounded-full bg-[#8F0000] animate-ping" />
+                    <span>Feel the 9PM Sound &bull; Tap to Play</span>
+                  </>
+                )}
+              </span>
+            </button>
           </div>
 
           {/* Action CTAs */}
@@ -236,7 +259,7 @@ export default function Home({ data, onOpenReservation }) {
               </div>
               <div className="lg:col-span-6 h-[320px] lg:h-[450px] relative">
                 <img
-                  src="https://images.unsplash.com/photo-1572116469696-31de0f17cc34?auto=format&fit=crop&w=1200&q=80"
+                  src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmesdtB5xDtq_5s4rqsx_erwhubaw-gkXOJtvpVpaAvnG_ZAYT-B9Tumg4kOebhsQsP3RbiCHBjxSkahCWWVlSWIb7mE_UrAmF7P-nxC0brGZLGFQ6IRAZs4NQddKv1NhBmhUw=s1360-w1360-h1020-rw"
                   alt="9PM Lounge & Bar"
                   className="w-full h-full object-cover"
                 />
@@ -311,6 +334,43 @@ export default function Home({ data, onOpenReservation }) {
                 </div>
               ))}
             </div>
+          </div>
+
+          {/* Audio Vibe Preview Banner in DJ Section */}
+          <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#1A1A1A] via-[#1A1A1A]/80 to-[#1A1A1A] border border-[#8F0000]/40 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-2xl">
+            <div className="flex items-center gap-4 text-center sm:text-left flex-col sm:flex-row">
+              <div className="w-14 h-14 rounded-2xl bg-[#8F0000]/20 border border-[#8F0000]/40 text-[#8F0000] flex items-center justify-center shrink-0 shadow-lg">
+                <Radio className={`w-7 h-7 ${isPlaying ? 'animate-pulse' : ''}`} />
+              </div>
+              <div>
+                <span className="text-[11px] font-black uppercase tracking-widest text-[#8F0000]">
+                  9PM Club Sound &bull; Audio Experience
+                </span>
+                <h4 className="text-xl font-black text-white mt-0.5">
+                  {currentTrack ? currentTrack.title : '9PM Resident Club Sessions'}
+                </h4>
+                <p className="text-xs text-zinc-400 mt-1">
+                  Immerse yourself in authentic Palolem nightlife beats &bull; {currentTrack ? currentTrack.genre : 'Deep House & Techno'}.
+                </p>
+              </div>
+            </div>
+
+            <button
+              onClick={onTogglePlay}
+              className="px-6 py-3 rounded-xl btn-9pm-primary font-bold text-xs uppercase tracking-wider flex items-center gap-2.5 shrink-0 shadow-xl shadow-[#8F0000]/30 hover:scale-105 transition-all"
+            >
+              {isPlaying ? (
+                <>
+                  <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                  <span>Pause Music</span>
+                </>
+              ) : (
+                <>
+                  <Disc3 className="w-4 h-4 animate-spin" style={{ animationDuration: '3s' }} />
+                  <span>Play Club Beats</span>
+                </>
+              )}
+            </button>
           </div>
 
         </div>

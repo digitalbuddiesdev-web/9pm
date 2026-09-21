@@ -8,6 +8,23 @@ import pizzaImg from '../assets/Gallary/pizza.jpeg';
 import tempuraSushiImg from '../assets/Gallary/tempura-sushi.jpeg';
 import tequilaSunsetImg from '../assets/Gallary/tequila-sunset.jpeg';
 
+// Authentic 9PM Bar & Venue Images
+import barCounterImg from '../assets/bar images/unnamed.webp';
+import cocktailLineupImg from '../assets/bar images/unnamed (1).webp';
+import barStoolsImg from '../assets/bar images/unnamed (2).webp';
+import wokChilliDishImg from '../assets/bar images/unnamed (3).webp';
+import infusedSpiritsImg from '../assets/bar images/unnamed (4).webp';
+import barGuestVibeImg from '../assets/bar images/unnamed (5).webp';
+import mixologistWorkImg from '../assets/bar images/unnamed (6).webp';
+import edisonBottleDisplayImg from '../assets/bar images/unnamed (7).webp';
+import mezzanineArchImg from '../assets/bar images/unnamed (8).webp';
+import artisanTacosImg from '../assets/bar images/unnamed (9).webp';
+import sushiBaoComboImg from '../assets/bar images/unnamed (10).webp';
+import vipLoungeImg from '../assets/bar images/unnamed (11).webp';
+import highAngleBarImg from '../assets/bar images/unnamed (12).webp';
+import neonShelvesImg from '../assets/bar images/unnamed (13).webp';
+import bartendersCraftImg from '../assets/bar images/unnamed (14).webp';
+
 export const ninePMData = {
   brandId: 'ninepm',
   brandName: '9PM',
@@ -222,66 +239,171 @@ export const ninePMData = {
   gallery: [
     {
       id: 1,
-      category: 'Food',
-      title: 'Steamed Bao Buns',
-      image: baoImg,
-      caption: 'Fluffy steamed bao buns with savory fillings.'
+      category: 'Bar & Ambience',
+      title: 'Illuminated Bar Counter',
+      image: barCounterImg,
+      caption: 'The glowing brick bar counter featuring warm Edison pendant bulbs, lush greenery, and premium spirits.'
     },
     {
       id: 2,
-      category: 'Food',
-      title: 'Chicken Chilli',
-      image: chickenChilliImg,
-      caption: 'Spicy Bsail-style chicken chilli.'
+      category: 'Cocktails',
+      title: 'Signature Craft Cocktail Flight',
+      image: cocktailLineupImg,
+      caption: 'A vibrant flight of artisanal cocktails, tropical coolers, and signature mixology creations.'
     },
     {
       id: 3,
-      category: 'Food',
-      title: 'Dim Sums',
-      image: dimSumsImg,
-      caption: 'Handcrafted dim sums with dipping sauces.'
+      category: 'Bar & Ambience',
+      title: 'VIP Chesterfield Lounge',
+      image: vipLoungeImg,
+      caption: 'Plush velvet tufted sofa seating with acoustic sound treatment for intimate conversations.'
     },
     {
       id: 4,
       category: 'Food',
-      title: 'Dim Sums Platter',
-      image: dimSums2Img,
-      caption: 'A second take on our signature dim sums.'
+      title: 'Sushi Rolls & Steamed Bao',
+      image: sushiBaoComboImg,
+      caption: 'Freshly prepared maki sushi platter paired with warm steamed bao buns in a traditional bamboo steamer.'
     },
     {
       id: 5,
-      category: 'Cocktails',
-      title: 'Green Apple Juice',
-      image: greenAppleJuiceImg,
-      caption: 'Fresh-pressed green apple juice.'
+      category: 'Bar & Ambience',
+      title: '9PM Signature Bar',
+      image: barStoolsImg,
+      caption: 'Sleek wood-and-steel bar seating with mood neon lighting and top-shelf bottle displays.'
     },
     {
       id: 6,
       category: 'Cocktails',
-      title: 'Jager Bomb',
-      image: jagerBombImg,
-      caption: 'The classic Jager Bomb shot.'
+      title: 'Mixologist at Work',
+      image: mixologistWorkImg,
+      caption: 'Expert bartenders crafting bespoke cocktails under ambient emerald lighting.'
     },
     {
       id: 7,
       category: 'Food',
-      title: 'Wood-Fired Pizza',
-      image: pizzaImg,
-      caption: 'Crispy wood-fired pizza with fresh toppings.'
+      title: 'Loaded Artisan Tacos',
+      image: artisanTacosImg,
+      caption: 'Crisp tacos loaded with fresh guacamole, roasted salsa, jalapenos, and dipping sauce.'
     },
     {
       id: 8,
-      category: 'Food',
-      title: 'Tempura Sushi',
-      image: tempuraSushiImg,
-      caption: 'Tempura-style sushi rolls.'
+      category: 'Bar & Ambience',
+      title: 'Mezzanine & High-Ceiling Architecture',
+      image: mezzanineArchImg,
+      caption: 'Stunning overhead view of the high-ceiling venue and cascading filament bulb installation.'
     },
     {
       id: 9,
+      category: 'Food',
+      title: 'Wok-Tossed Chilli Special',
+      image: wokChilliDishImg,
+      caption: 'Fiery wok-tossed chicken and paneer with crisp bell peppers and scallions.'
+    },
+    {
+      id: 10,
+      category: 'Bar & Ambience',
+      title: 'Infused Spirits & Botanical Backbar',
+      image: infusedSpiritsImg,
+      caption: 'House-infused cinnamon whiskey, berry gins, and top-shelf spirits on multi-tiered shelves.'
+    },
+    {
+      id: 11,
       category: 'Cocktails',
       title: 'Tequila Sunset',
       image: tequilaSunsetImg,
-      caption: 'A refreshing tequila sunset cocktail.'
+      caption: 'A refreshing sunset-hued cocktail crafted with premium agave and citrus.'
+    },
+    {
+      id: 12,
+      category: 'Bar & Ambience',
+      title: 'Bar Floor & Aerial View',
+      image: highAngleBarImg,
+      caption: 'Bird’s-eye perspective of the bustling main bar and warm ambient glow.'
+    },
+    {
+      id: 13,
+      category: 'Food',
+      title: 'Steamed Bao Buns',
+      image: baoImg,
+      caption: 'Fluffy steamed bao buns with savory artisanal fillings.'
+    },
+    {
+      id: 14,
+      category: 'Bar & Ambience',
+      title: 'Backlit Bar Display',
+      image: neonShelvesImg,
+      caption: 'Illuminated bottle wall and crystal glassware in atmospheric purple glow.'
+    },
+    {
+      id: 15,
+      category: 'Cocktails',
+      title: 'Jager Bomb Drop',
+      image: jagerBombImg,
+      caption: 'The high-energy club favorite shot for the dance floor.'
+    },
+    {
+      id: 16,
+      category: 'Food',
+      title: 'Wood-Fired Pizza',
+      image: pizzaImg,
+      caption: 'Crispy wood-fired pizza with fresh herbs, mozzarella, and savory toppings.'
+    },
+    {
+      id: 17,
+      category: 'Bar & Ambience',
+      title: 'Late Night Bar Mood',
+      image: barGuestVibeImg,
+      caption: 'Casual late-night conversations and drinks by the illuminated counter.'
+    },
+    {
+      id: 18,
+      category: 'Food',
+      title: 'Tempura Sushi Platter',
+      image: tempuraSushiImg,
+      caption: 'Crisp tempura-style sushi rolls with wasabi and pickled ginger.'
+    },
+    {
+      id: 19,
+      category: 'Cocktails',
+      title: 'Fresh Pressed Green Apple',
+      image: greenAppleJuiceImg,
+      caption: 'Crisp, refreshing cold-pressed green apple cooler.'
+    },
+    {
+      id: 20,
+      category: 'Bar & Ambience',
+      title: 'Edison Bulb Bottle Installation',
+      image: edisonBottleDisplayImg,
+      caption: 'Cascading warm incandescent filament bulbs against the botanical spirit display.'
+    },
+    {
+      id: 21,
+      category: 'Food',
+      title: 'Basil Chicken Chilli',
+      image: chickenChilliImg,
+      caption: 'Spicy wok-tossed basil chicken chilli with bell peppers.'
+    },
+    {
+      id: 22,
+      category: 'Bar & Ambience',
+      title: 'Bartenders & Service Craft',
+      image: bartendersCraftImg,
+      caption: 'Attentive service and fast pours from our friendly late-night bar team.'
+    },
+    {
+      id: 23,
+      category: 'Food',
+      title: 'Handcrafted Dim Sums',
+      image: dimSumsImg,
+      caption: 'Freshly steamed dim sums with authentic dipping sauces.'
+    },
+    {
+      id: 24,
+      category: 'Food',
+      title: 'Signature Dim Sums Duo',
+      image: dimSums2Img,
+      caption: 'Delicate steamed dumplings prepared fresh by our late-night culinary team.'
     }
   ]
 };

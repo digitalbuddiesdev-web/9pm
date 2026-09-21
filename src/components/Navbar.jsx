@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Calendar, Menu, X } from 'lucide-react';
+import { Phone, Calendar, Menu, X, Music } from 'lucide-react';
 import ninePMLogoImg from '../assets/9pmlogo.jpg';
 
-export default function Navbar({ data, onOpenReservation }) {
+export default function Navbar({ data, onOpenReservation, isPlaying, onTogglePlay }) {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -107,8 +107,27 @@ export default function Navbar({ data, onOpenReservation }) {
           </button>
         </nav>
 
-        {/* Right: CTA (Call Now / Reserve / Mobile Menu) */}
+        {/* Right: CTA (Call Now / Sound / Reserve / Mobile Menu) */}
         <div className="flex items-center gap-2 sm:gap-3">
+          {/* Club Music Sound Toggle */}
+          <button
+            onClick={onTogglePlay}
+            aria-label={isPlaying ? 'Pause 9PM Sound' : 'Play 9PM Sound'}
+            className={`inline-flex items-center gap-2 px-3 py-2 rounded-xl text-xs font-bold tracking-wide transition-all border ${
+              isPlaying
+                ? 'bg-[#8F0000]/20 border-[#8F0000] text-white shadow-lg shadow-[#8F0000]/20 animate-pulse-slow'
+                : 'bg-[#1A1A1A] border-white/10 hover:border-[#8F0000]/50 text-zinc-300 hover:text-white'
+            }`}
+            title={isPlaying ? 'Pause 9PM Sound' : 'Play 9PM Sound'}
+          >
+            <div className="flex items-center gap-0.5 h-3">
+              <span className={`w-0.5 bg-[#8F0000] rounded-full transition-all ${isPlaying ? 'eq-bar-1 h-3' : 'h-1.5 opacity-40'}`} />
+              <span className={`w-0.5 bg-[#B31212] rounded-full transition-all ${isPlaying ? 'eq-bar-2 h-3.5' : 'h-2 opacity-40'}`} />
+              <span className={`w-0.5 bg-[#8F0000] rounded-full transition-all ${isPlaying ? 'eq-bar-3 h-2.5' : 'h-1 opacity-40'}`} />
+            </div>
+            <span className="hidden sm:inline">{isPlaying ? 'Sound ON' : 'Club Sound'}</span>
+          </button>
+
           {/* Quick Call Link */}
           <a
             href={`tel:${data.phone}`}
@@ -184,6 +203,24 @@ export default function Navbar({ data, onOpenReservation }) {
           >
             Find Us in Palolem
           </button>
+
+          <div className="pt-2 border-t border-white/10">
+            <button
+              onClick={() => {
+                onTogglePlay();
+                setMobileMenuOpen(false);
+              }}
+              className="w-full flex items-center justify-between px-3 py-2.5 rounded-xl bg-[#1A1A1A] border border-white/10 text-xs font-bold text-white"
+            >
+              <span className="flex items-center gap-2">
+                <Music className="w-4 h-4 text-[#8F0000]" />
+                <span>9PM Bar & Club Music</span>
+              </span>
+              <span className={`px-2 py-0.5 rounded text-[10px] uppercase font-mono ${isPlaying ? 'bg-[#8F0000] text-white' : 'bg-white/10 text-zinc-400'}`}>
+                {isPlaying ? 'Playing' : 'Paused'}
+              </span>
+            </button>
+          </div>
         </div>
       )}
     </header>
