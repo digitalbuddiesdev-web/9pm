@@ -9,7 +9,7 @@ import { Phone, Calendar } from 'lucide-react';
 
 export default function App() {
   const [isReservationOpen, setIsReservationOpen] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   const [isMusicMinimized, setIsMusicMinimized] = useState(false);
