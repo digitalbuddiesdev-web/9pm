@@ -25,6 +25,29 @@ import highAngleBarImg from '../assets/bar images/unnamed (12).webp';
 import neonShelvesImg from '../assets/bar images/unnamed (13).webp';
 import bartendersCraftImg from '../assets/bar images/unnamed (14).webp';
 
+// Newly added high-definition venue, cocktail & crowd gallery photos
+import newNeonBackbarImg from '../assets/new_gallery/dsc_0384.webp';
+import newIndustrialFilamentImg from '../assets/new_gallery/dsc_0386.webp';
+import newTopShelfBlueImg from '../assets/new_gallery/dsc_0387.webp';
+import newClubEnergyImg from '../assets/new_gallery/dsc_0392.webp';
+import newTropicalSageCoolerImg from '../assets/new_gallery/dsc_0414.webp';
+import newCoconutPineappleFizzImg from '../assets/new_gallery/dsc_0418.webp';
+import newRootsReggaeVibeImg from '../assets/new_gallery/dsc_0430.webp';
+import newGrandEntranceImg from '../assets/new_gallery/dsc_0440.webp';
+import newCelebrationShotsImg from '../assets/new_gallery/dsc_0444.webp';
+import newBotanicalGinTonicImg from '../assets/new_gallery/dsc_0476.webp';
+import newDanceFloorRhythmImg from '../assets/new_gallery/dsc_0539.webp';
+import newMidnightGrooveImg from '../assets/new_gallery/dsc_0564.webp';
+import newGlamNightImg from '../assets/new_gallery/dsc_0574.webp';
+import newBarConversationsImg from '../assets/new_gallery/dsc_0580.webp';
+import newVelvetEspressoMartiniImg from '../assets/new_gallery/dsc_0593.webp';
+import newCocktailQuadFlightImg from '../assets/new_gallery/dsc_0604.webp';
+import newVipMezzanineImg from '../assets/new_gallery/dsc_0796.webp';
+import newHappyHospitalityImg from '../assets/new_gallery/dsc_0811.webp';
+import newJoyfulEveningsImg from '../assets/new_gallery/dsc_0813.webp';
+import newTropicalGardenPatioImg from '../assets/new_gallery/dsc_0838.webp';
+import newNeonHighballDuoImg from '../assets/new_gallery/dsc_0860.webp';
+
 export const ninePMData = {
   brandId: 'ninepm',
   brandName: '9PM',
@@ -247,16 +270,16 @@ export const ninePMData = {
     {
       id: 2,
       category: 'Cocktails',
-      title: 'Signature Craft Cocktail Flight',
-      image: cocktailLineupImg,
-      caption: 'A vibrant flight of artisanal cocktails, tropical coolers, and signature mixology creations.'
+      title: 'Signature Mixology Flight',
+      image: newCocktailQuadFlightImg,
+      caption: 'A colorful quartet of handcrafted cocktails showcasing our mixologists’ diverse flavor profiles and garnishes.'
     },
     {
       id: 3,
       category: 'Bar & Ambience',
-      title: 'VIP Chesterfield Lounge',
-      image: vipLoungeImg,
-      caption: 'Plush velvet tufted sofa seating with acoustic sound treatment for intimate conversations.'
+      title: 'Neon Backbar & Bottle Shelves',
+      image: newNeonBackbarImg,
+      caption: 'Tall illuminated liquor shelves lined with premium spirits and bottles under vivid blue neon lighting.'
     },
     {
       id: 4,
@@ -267,143 +290,290 @@ export const ninePMData = {
     },
     {
       id: 5,
-      category: 'Bar & Ambience',
-      title: '9PM Signature Bar',
-      image: barStoolsImg,
-      caption: 'Sleek wood-and-steel bar seating with mood neon lighting and top-shelf bottle displays.'
+      category: 'Cocktails',
+      title: 'Tropical Sage Cooler',
+      image: newTropicalSageCoolerImg,
+      caption: 'Artisanal green botanical cocktail topped with silken foam and fresh charred pineapple.'
     },
     {
       id: 6,
-      category: 'Cocktails',
-      title: 'Mixologist at Work',
-      image: mixologistWorkImg,
-      caption: 'Expert bartenders crafting bespoke cocktails under ambient emerald lighting.'
+      category: 'Bar & Ambience',
+      title: 'VIP Chesterfield Lounge',
+      image: vipLoungeImg,
+      caption: 'Plush velvet tufted sofa seating with acoustic sound treatment for intimate conversations.'
     },
     {
       id: 7,
+      category: 'Bar & Ambience',
+      title: 'Lush Tropical Garden Patio',
+      image: newTropicalGardenPatioImg,
+      caption: 'Alfresco garden tables surrounded by vibrant palms and ambient overhead canopy lighting.'
+    },
+    {
+      id: 8,
       category: 'Food',
       title: 'Loaded Artisan Tacos',
       image: artisanTacosImg,
       caption: 'Crisp tacos loaded with fresh guacamole, roasted salsa, jalapenos, and dipping sauce.'
     },
     {
-      id: 8,
-      category: 'Bar & Ambience',
-      title: 'Mezzanine & High-Ceiling Architecture',
-      image: mezzanineArchImg,
-      caption: 'Stunning overhead view of the high-ceiling venue and cascading filament bulb installation.'
-    },
-    {
       id: 9,
-      category: 'Food',
-      title: 'Wok-Tossed Chilli Special',
-      image: wokChilliDishImg,
-      caption: 'Fiery wok-tossed chicken and paneer with crisp bell peppers and scallions.'
+      category: 'Cocktails',
+      title: 'Velvet Espresso Martini',
+      image: newVelvetEspressoMartiniImg,
+      caption: 'Rich freshly pulled espresso shaken with craft vodka and topped with dark cocoa dusting.'
     },
     {
       id: 10,
       category: 'Bar & Ambience',
-      title: 'Infused Spirits & Botanical Backbar',
-      image: infusedSpiritsImg,
-      caption: 'House-infused cinnamon whiskey, berry gins, and top-shelf spirits on multi-tiered shelves.'
+      title: 'Welcome to 9PM Palolem',
+      image: newGrandEntranceImg,
+      caption: 'Guests arriving under the glittering disco ball and neon welcome glow.'
     },
     {
       id: 11,
       category: 'Cocktails',
-      title: 'Tequila Sunset',
-      image: tequilaSunsetImg,
-      caption: 'A refreshing sunset-hued cocktail crafted with premium agave and citrus.'
+      title: 'Signature Craft Cocktail Flight',
+      image: cocktailLineupImg,
+      caption: 'A vibrant flight of artisanal cocktails, tropical coolers, and signature mixology creations.'
     },
     {
       id: 12,
       category: 'Bar & Ambience',
-      title: 'Bar Floor & Aerial View',
-      image: highAngleBarImg,
-      caption: 'Bird’s-eye perspective of the bustling main bar and warm ambient glow.'
+      title: 'Late Night Dance Floor Rhythm',
+      image: newDanceFloorRhythmImg,
+      caption: 'Moving to hypnotic techno and Afro house grooves on the pulsating dance floor.'
     },
     {
       id: 13,
-      category: 'Food',
-      title: 'Steamed Bao Buns',
-      image: baoImg,
-      caption: 'Fluffy steamed bao buns with savory artisanal fillings.'
-    },
-    {
-      id: 14,
-      category: 'Bar & Ambience',
-      title: 'Backlit Bar Display',
-      image: neonShelvesImg,
-      caption: 'Illuminated bottle wall and crystal glassware in atmospheric purple glow.'
-    },
-    {
-      id: 15,
-      category: 'Cocktails',
-      title: 'Jager Bomb Drop',
-      image: jagerBombImg,
-      caption: 'The high-energy club favorite shot for the dance floor.'
-    },
-    {
-      id: 16,
       category: 'Food',
       title: 'Wood-Fired Pizza',
       image: pizzaImg,
       caption: 'Crispy wood-fired pizza with fresh herbs, mozzarella, and savory toppings.'
     },
     {
+      id: 14,
+      category: 'Cocktails',
+      title: 'Botanical Cucumber Tonic',
+      image: newBotanicalGinTonicImg,
+      caption: 'Chilled artisanal gin paired with crisp tonic water and a delicate cucumber ribbon skewer.'
+    },
+    {
+      id: 15,
+      category: 'Bar & Ambience',
+      title: 'Top-Shelf Spirits & Ambient Glow',
+      image: newTopShelfBlueImg,
+      caption: 'Curated reserve whiskeys, vodkas, and champagnes showcased under sapphire blue backlighting.'
+    },
+    {
+      id: 16,
+      category: 'Food',
+      title: 'Wok-Tossed Chilli Special',
+      image: wokChilliDishImg,
+      caption: 'Fiery wok-tossed chicken and paneer with crisp bell peppers and scallions.'
+    },
+    {
       id: 17,
       category: 'Bar & Ambience',
-      title: 'Late Night Bar Mood',
-      image: barGuestVibeImg,
-      caption: 'Casual late-night conversations and drinks by the illuminated counter.'
+      title: 'VIP Mezzanine Lounge',
+      image: newVipMezzanineImg,
+      caption: 'Relaxing on plush tufted Chesterfield leather sofas with dedicated cocktail service.'
     },
     {
       id: 18,
+      category: 'Cocktails',
+      title: 'Neon Tropical Highball Duo',
+      image: newNeonHighballDuoImg,
+      caption: 'Crisp, refreshing fruit-forward highball coolers served over crushed ice.'
+    },
+    {
+      id: 19,
+      category: 'Bar & Ambience',
+      title: 'Palolem Nightlife Glamour',
+      image: newGlamNightImg,
+      caption: 'Dressing up for peak weekend DJ sessions and unforgettable late-night memories.'
+    },
+    {
+      id: 20,
       category: 'Food',
       title: 'Tempura Sushi Platter',
       image: tempuraSushiImg,
       caption: 'Crisp tempura-style sushi rolls with wasabi and pickled ginger.'
     },
     {
-      id: 19,
-      category: 'Cocktails',
-      title: 'Fresh Pressed Green Apple',
-      image: greenAppleJuiceImg,
-      caption: 'Crisp, refreshing cold-pressed green apple cooler.'
-    },
-    {
-      id: 20,
-      category: 'Bar & Ambience',
-      title: 'Edison Bulb Bottle Installation',
-      image: edisonBottleDisplayImg,
-      caption: 'Cascading warm incandescent filament bulbs against the botanical spirit display.'
-    },
-    {
       id: 21,
+      category: 'Bar & Ambience',
+      title: '9PM Signature Bar',
+      image: barStoolsImg,
+      caption: 'Sleek wood-and-steel bar seating with mood neon lighting and top-shelf bottle displays.'
+    },
+    {
+      id: 22,
+      category: 'Cocktails',
+      title: 'Coconut Pineapple Velvet Fizz',
+      image: newCoconutPineappleFizzImg,
+      caption: 'A velvety tropical fusion crafted with coconut cream, fresh pineapple, and aged spirits.'
+    },
+    {
+      id: 23,
+      category: 'Bar & Ambience',
+      title: 'Celebration Shots & Crew Nights',
+      image: newCelebrationShotsImg,
+      caption: 'Raising glasses and sharing celebration toasts at the high-top bar tables.'
+    },
+    {
+      id: 24,
+      category: 'Food',
+      title: 'Steamed Bao Buns',
+      image: baoImg,
+      caption: 'Fluffy steamed bao buns with savory artisanal fillings.'
+    },
+    {
+      id: 25,
+      category: 'Cocktails',
+      title: 'Mixologist at Work',
+      image: mixologistWorkImg,
+      caption: 'Expert bartenders crafting bespoke cocktails under ambient emerald lighting.'
+    },
+    {
+      id: 26,
+      category: 'Bar & Ambience',
+      title: 'Industrial Filament & Liquor Collection',
+      image: newIndustrialFilamentImg,
+      caption: 'Warm glowing Edison pendant lights contrasting with modern neon-lit backbar architecture.'
+    },
+    {
+      id: 27,
+      category: 'Bar & Ambience',
+      title: 'Mezzanine & High-Ceiling Architecture',
+      image: mezzanineArchImg,
+      caption: 'Stunning overhead view of the high-ceiling venue and cascading filament bulb installation.'
+    },
+    {
+      id: 28,
+      category: 'Cocktails',
+      title: 'Tequila Sunset',
+      image: tequilaSunsetImg,
+      caption: 'A refreshing sunset-hued cocktail crafted with premium agave and citrus.'
+    },
+    {
+      id: 29,
       category: 'Food',
       title: 'Basil Chicken Chilli',
       image: chickenChilliImg,
       caption: 'Spicy wok-tossed basil chicken chilli with bell peppers.'
     },
     {
-      id: 22,
+      id: 30,
       category: 'Bar & Ambience',
-      title: 'Bartenders & Service Craft',
-      image: bartendersCraftImg,
-      caption: 'Attentive service and fast pours from our friendly late-night bar team.'
+      title: 'Cocktail Bar Conversations',
+      image: newBarConversationsImg,
+      caption: 'Intimate bar-side laughter and craft libations under cascading neon lights.'
     },
     {
-      id: 23,
+      id: 31,
+      category: 'Bar & Ambience',
+      title: 'Bar Floor & Aerial View',
+      image: highAngleBarImg,
+      caption: 'Bird’s-eye perspective of the bustling main bar and warm ambient glow.'
+    },
+    {
+      id: 32,
+      category: 'Cocktails',
+      title: 'Jager Bomb Drop',
+      image: jagerBombImg,
+      caption: 'The high-energy club favorite shot for the dance floor.'
+    },
+    {
+      id: 33,
       category: 'Food',
       title: 'Handcrafted Dim Sums',
       image: dimSumsImg,
       caption: 'Freshly steamed dim sums with authentic dipping sauces.'
     },
     {
-      id: 24,
+      id: 34,
+      category: 'Bar & Ambience',
+      title: 'Club Energy & Evening Smiles',
+      image: newClubEnergyImg,
+      caption: 'Guests soaking in the upbeat music and vibrant party atmosphere at 9PM.'
+    },
+    {
+      id: 35,
+      category: 'Cocktails',
+      title: 'Fresh Pressed Green Apple',
+      image: greenAppleJuiceImg,
+      caption: 'Crisp, refreshing cold-pressed green apple cooler.'
+    },
+    {
+      id: 36,
+      category: 'Bar & Ambience',
+      title: 'Backlit Bar Display',
+      image: neonShelvesImg,
+      caption: 'Illuminated bottle wall and crystal glassware in atmospheric purple glow.'
+    },
+    {
+      id: 37,
+      category: 'Bar & Ambience',
+      title: 'Edison Bulb Bottle Installation',
+      image: edisonBottleDisplayImg,
+      caption: 'Cascading warm incandescent filament bulbs against the botanical spirit display.'
+    },
+    {
+      id: 38,
       category: 'Food',
       title: 'Signature Dim Sums Duo',
       image: dimSums2Img,
       caption: 'Delicate steamed dumplings prepared fresh by our late-night culinary team.'
+    },
+    {
+      id: 39,
+      category: 'Bar & Ambience',
+      title: 'Roots & Coastal Reggae Vibe',
+      image: newRootsReggaeVibeImg,
+      caption: 'Underground music culture and free-spirited coastal vibes defining 9PM nightlife.'
+    },
+    {
+      id: 40,
+      category: 'Bar & Ambience',
+      title: 'Midnight Beats & Euphoria',
+      image: newMidnightGrooveImg,
+      caption: 'Pure energy on the floor as resident DJs elevate the Palolem nightlife experience.'
+    },
+    {
+      id: 41,
+      category: 'Bar & Ambience',
+      title: 'Infused Spirits & Botanical Backbar',
+      image: infusedSpiritsImg,
+      caption: 'House-infused cinnamon whiskey, berry gins, and top-shelf spirits on multi-tiered shelves.'
+    },
+    {
+      id: 42,
+      category: 'Bar & Ambience',
+      title: 'Bartenders & Service Craft',
+      image: bartendersCraftImg,
+      caption: 'Attentive service and fast pours from our friendly late-night bar team.'
+    },
+    {
+      id: 43,
+      category: 'Bar & Ambience',
+      title: 'Late Night Bar Mood',
+      image: barGuestVibeImg,
+      caption: 'Casual late-night conversations and drinks by the illuminated counter.'
+    },
+    {
+      id: 44,
+      category: 'Bar & Ambience',
+      title: 'Warm Hospitality & Happy Moments',
+      image: newHappyHospitalityImg,
+      caption: 'An inclusive, welcoming coastal haven for all guests, families, and travelers.'
+    },
+    {
+      id: 45,
+      category: 'Bar & Ambience',
+      title: 'Coastal Evening Smiles',
+      image: newJoyfulEveningsImg,
+      caption: 'Joyful dining moments and genuine smiles that make 9PM feel like home.'
     }
   ]
 };
