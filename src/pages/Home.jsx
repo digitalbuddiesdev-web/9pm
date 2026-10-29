@@ -22,6 +22,7 @@ import SocialSection from '../components/SocialSection';
 import LocationSection from '../components/LocationSection';
 import FAQSection from '../components/FAQSection';
 import ninePMLogoImg from '../assets/9pmlogo.jpg';
+import featuretteLoungeImg from '../assets/bar images/unnamed (5).webp';
 
 export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay, currentTrack }) {
   const [activeMenuCategory, setActiveMenuCategory] = useState('All');
@@ -261,8 +262,8 @@ export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay,
               </div>
               <div className="lg:col-span-6 h-[320px] lg:h-[450px] relative">
                 <img
-                  src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmesdtB5xDtq_5s4rqsx_erwhubaw-gkXOJtvpVpaAvnG_ZAYT-B9Tumg4kOebhsQsP3RbiCHBjxSkahCWWVlSWIb7mE_UrAmF7P-nxC0brGZLGFQ6IRAZs4NQddKv1NhBmhUw=s1360-w1360-h1020-rw"
-                  alt="9PM Lounge and Bar interior with mood lighting in Palolem South Goa"
+                  src={featuretteLoungeImg}
+                  alt="9PM Bar and Lounge atmosphere with guests enjoying late-night drinks and hospitality in Palolem Goa"
                   loading="lazy"
                   className="w-full h-full object-cover"
                 />
