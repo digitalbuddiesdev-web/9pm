@@ -85,7 +85,7 @@ export default function SocialSection({ data }) {
               >
                 <img
                   src={post.img}
-                  alt="Instagram post preview"
+                  alt={`9PM Bar & Cafe Palolem Goa nightlife and party moment on Instagram (${post.id})`}
                   loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />

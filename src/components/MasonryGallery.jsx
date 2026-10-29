@@ -72,7 +72,7 @@ export default function MasonryGallery({ data }) {
               {/* Image */}
               <img
                 src={item.image}
-                alt={item.title}
+                alt={`${item.title} - 9PM Bar & Cafe Palolem Goa`}
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />

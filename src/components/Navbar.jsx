@@ -100,6 +100,12 @@ export default function Navbar({ data, onOpenReservation, isPlaying, onTogglePla
             Gallery
           </button>
           <button
+            onClick={() => scrollTo('faq')}
+            className="px-4 py-1.5 rounded-full text-xs font-semibold text-zinc-300 hover:text-white hover:bg-white/5 transition-all"
+          >
+            FAQ
+          </button>
+          <button
             onClick={() => scrollTo('location')}
             className="px-4 py-1.5 rounded-full text-xs font-semibold text-zinc-300 hover:text-white hover:bg-white/5 transition-all"
           >
@@ -196,6 +202,12 @@ export default function Navbar({ data, onOpenReservation, isPlaying, onTogglePla
             className="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-zinc-300 hover:text-white hover:bg-white/5"
           >
             Visual Gallery
+          </button>
+          <button
+            onClick={() => scrollTo('faq')}
+            className="block w-full text-left px-3 py-2 rounded-lg text-sm font-semibold text-zinc-300 hover:text-white hover:bg-white/5"
+          >
+            FAQ
           </button>
           <button
             onClick={() => scrollTo('location')}

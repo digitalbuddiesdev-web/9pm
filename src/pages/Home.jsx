@@ -20,6 +20,7 @@ import ReviewSection from '../components/ReviewSection';
 import MasonryGallery from '../components/MasonryGallery';
 import SocialSection from '../components/SocialSection';
 import LocationSection from '../components/LocationSection';
+import FAQSection from '../components/FAQSection';
 import ninePMLogoImg from '../assets/9pmlogo.jpg';
 
 export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay, currentTrack }) {
@@ -48,7 +49,7 @@ export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay,
         <div className="absolute inset-0 z-0">
           <img
             src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&w=2000&q=85"
-            alt="9PM Nightlife & DJ"
+            alt="9PM Bar and Cafe nightlife, energetic dance floor and DJ setup in Palolem Goa"
             className="w-full h-full object-cover object-center scale-105 filter brightness-[0.38] contrast-125"
           />
           {/* Cinematic Dark & Deep Maroon Atmosphere Overlays */}
@@ -63,7 +64,7 @@ export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay,
           {/* Logo & Badge */}
           <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-[#1A1A1A]/90 border border-[#8F0000]/40 backdrop-blur-md mb-6 shadow-xl shadow-black/80">
             <div className="w-6 h-6 rounded-full overflow-hidden bg-black shrink-0 border border-white/20">
-              <img src={ninePMLogoImg} alt="9PM Official Logo" className="w-full h-full object-contain" />
+              <img src={ninePMLogoImg} alt="9PM Bar and Cafe Official Logo - Palolem South Goa" className="w-full h-full object-contain" />
             </div>
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#FAF8F6]">
               Palolem &bull; South Goa Nightlife
@@ -77,6 +78,7 @@ export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay,
 
           {/* Main Title */}
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight text-white leading-none uppercase">
+            <span className="sr-only">9PM Bar & Cafe — Premier Nightlife, Live DJs & Cocktails in Palolem, Goa. </span>
             Party. Chill. <br />
             <span className="text-[#8F0000] relative inline-block">
               Unwind.
@@ -260,7 +262,8 @@ export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay,
               <div className="lg:col-span-6 h-[320px] lg:h-[450px] relative">
                 <img
                   src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmesdtB5xDtq_5s4rqsx_erwhubaw-gkXOJtvpVpaAvnG_ZAYT-B9Tumg4kOebhsQsP3RbiCHBjxSkahCWWVlSWIb7mE_UrAmF7P-nxC0brGZLGFQ6IRAZs4NQddKv1NhBmhUw=s1360-w1360-h1020-rw"
-                  alt="9PM Lounge & Bar"
+                  alt="9PM Lounge and Bar interior with mood lighting in Palolem South Goa"
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#1A1A1A] via-transparent to-transparent" />
@@ -531,7 +534,8 @@ export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay,
                 <div className="rounded-2xl overflow-hidden aspect-[4/5] border border-white/10">
                   <img
                     src="https://images.unsplash.com/photo-1545128485-c400e7702796?auto=format&fit=crop&w=800&q=80"
-                    alt="9PM Hospitality"
+                    alt="Vibrant guest hospitality and nightlife experience at 9PM Bar Palolem"
+                  loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -549,7 +553,8 @@ export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay,
                 <div className="rounded-2xl overflow-hidden aspect-[4/5] border border-white/10">
                   <img
                     src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=80"
-                    alt="Cocktails at 9PM"
+                    alt="Signature craft cocktails and mixology at 9PM Bar Palolem Goa"
+                  loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -579,6 +584,15 @@ export default function Home({ data, onOpenReservation, isPlaying, onTogglePlay,
       {/* =========================================================================
           LOCATION & CONTACT SECTION
           ========================================================================= */}
+      {/* =========================================================================
+          FREQUENTLY ASKED QUESTIONS (SEO & Conversions)
+          ========================================================================= */}
+      <FAQSection
+        onOpenReservation={onOpenReservation}
+        phone={data.phone}
+        phoneDisplay={data.phoneDisplay}
+      />
+
       <LocationSection data={data} onOpenReservation={onOpenReservation} />
 
     </div>

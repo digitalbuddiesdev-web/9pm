@@ -93,6 +93,9 @@ export default function Footer({ data }) {
               <li>
                 <a href="#reviews" className="hover:text-white transition-colors">&bull; Verified Guest Reviews (4.6 ★)</a>
               </li>
+              <li>
+                <a href="#faq" className="hover:text-white transition-colors">&bull; Frequently Asked Questions</a>
+              </li>
             </ul>
           </div>
 
